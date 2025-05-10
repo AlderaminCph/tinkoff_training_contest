@@ -24,7 +24,7 @@ def get_internet_expenses(
 ) -> int:
     return (
         (traffic_size - tariff_size) * extra_price + tariff_cost
-        if traffic_size > tariff_size
+        if traffic_size >= tariff_size
         else tariff_cost
     )
 
