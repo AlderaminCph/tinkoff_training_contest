@@ -48,4 +48,4 @@ def get_swap_elements(
 if __name__ == "__main__":
     number_of_students = int(input())
     students_hight = list(map(int, input().split()))
-    print(get_swap_elements(number_of_students, students_hight))
+    print(*get_swap_elements(number_of_students, students_hight))
